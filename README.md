@@ -122,8 +122,7 @@ Magic bytes `whsc1.0`: `77 68 73 63 31 2E 30`
 
 Files with the `.dpk` extension that start with the ASCII magic bytes `whpackage1.0` (main header) / `whsc1.0` (chunk header) are a very complex, custom, proprietary game asset packing archive file format custom container that uses compression and custom multi-stage encryption. It seems to have been used since some time before 2008 to the present day only by the Chinese game development company "[Pixel Soft](https://www.pixelgame.net)".
 
-It took weeks of active work, dozens of angles of attack, multiple brute-force and analysis scripts, and thousands of assembly lines to be read from both static and dynamic analysis of the client, ManualPatch, and leaked server binary files, but I have managed to reverse-engineer the first version of this format, which was in use since 2008 and used until some years after 2012.  
-I don't know exactly when the silent switch to the new version of the format with the different encryption happened, and I don't have any 5.X.X.X or 6.X.X.X game clients to test, but the latest game version I can unpack that I have access to is 4.X.X.X, and the first game version I can't unpack is 7.0.26.1. At minimum, I should be able to unpack everything below 5.X.X.X, which means most of the older Xunxian, and all of Zentia.
+It took weeks of active work, dozens of angles of attack, multiple brute-force and analysis scripts, and thousands of assembly lines to be read from both static and dynamic analysis of the client, ManualPatch, and leaked server binary files, but I have managed to reverse-engineer the first version of this format, which was used since the game's release in 2008 until late 2015/early 2016, when the encryption was silently changed somewhere between the versions 3.9.57.1-3.9.73.1.  
 
 ### Games that use the `whpackage1.0` format:
 
@@ -134,7 +133,7 @@ PC MMORPG
 Official site: [xx.qq.com](xx.qq.com)  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to present  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
-**Format status: Cracked for game versions below 5.X.X.X**
+**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1. Didn't crack the v2 encryption used after.** I need the game client's tty3d.exe unpacked from Tencent Protect (Tersafe/TP3) first.
 
 - **Zentia** (Global EU/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
