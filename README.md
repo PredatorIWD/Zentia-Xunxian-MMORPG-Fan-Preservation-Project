@@ -68,7 +68,7 @@ This document itself will be the most up-to-date resource that lists which files
 **Important missing:** Almost all before ManualPatch2.3.23.1-2.3.24.1.exe, and I need ManualPatch8.0.13.1-8.0.14.1.exe specifically (maybe also named ManualPatch8.0.13.1-8.0.14.1-SD.exe)
 
 **Server files:**  
-**Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **partial** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files from different locations, but they all seem to be mostly the same.  
+**Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **partial** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
 **Important missing:** The actual full Malaysian server leak, and any other server files.
 
 **Private server clients:**  
@@ -103,7 +103,7 @@ Archiving for preservation purposes, but also because most of these games should
 
 # Reverse engineering
 
-I have learned a lot about the game, prepared and reverse-engineered important parts around the game that will make a lot of later work a lot easier, but there is a lot to do and currently, the next big step is still cracking the client network packet encryption, which, like most other things around reverse-engineering this game, doesn't seem too easy.
+I have learned a lot about the game, prepared and reverse-engineered important parts around the game that will make a lot of later work a lot easier, but there is still a lot to do and currently, the next big step is still cracking the client network packet encryption, which, like most other things around reverse-engineering this game, doesn't seem too easy.
 
 ### Some of the more important completed tasks:
 - Reverse-engineered the very complex custom game asset `.dpk` archive package `whpackage1.0` format and its v1 multi-stage custom encryption. Wrote a decryptor/unpacker for it.
@@ -157,11 +157,11 @@ Servers online: [26-Mar-2015](https://www.yoyou.com/shipin/201503/2619719.html) 
 # Publishing all of the files and the actual reverse-engineering work:
 
 I have freely shared my work in some small circles online already and plan to at some point, in the more distant future, publish all of my reverse-engineering work and some special archiving work that was done, all as open source for free one day. However:  
-1. The actual, main (Chinese) version of the game is still alive and well, and I don't want to step on any toes of anyone who actually created this good game by publishing files and tools that may aid someone in more easily modding the official game or cheating in it, yet.  
+1. The actual, main (Chinese) version of the game is still alive and well, and I don't want to step on any toes of anyone who actually created this good game by publishing files and tools that may aid someone in more easily modding the official game or cheating in it.  
 2. Unfortunately, the private server and reverse-engineering scene around this game in China seems to be heavily centered around earning money from the end-users or selling of the files. Given that my work is not complete, releasing any reverse-engineering tools right now would probably mostly just aid those types of people and may help them in earning more money in their closed ecosystems, which I don't want. I want what's best for both the end-users and the company that made the original product.  
 3. Publishing any reverse-engineering or special archiving work now could make the official game developers change how those systems work, which could easily make it much harder or impossible from that point onwards to actually preserve certain parts of the game for the sake of video game history.  
 
-In case you are preserving another old but dead game that is utilizing the same custom, complex asset packing `.dpk` / `whpackage1.0` format, you can contact me and I may try to unpack/crack those asset files for you. Or, in case you have any other questions or comments, feel free to contact me at: luka.celebic12 AT gmail.com 
+In case you are preserving another old but dead game that is utilizing any of the custom and complex game asset packing formats listed here that I have cracked, you can contact me and I may try to unpack/crack those asset files for you. Or, in case you have any other questions or comments, feel free to contact me at: luka.celebic12 AT gmail.com 
 
 ---
 
