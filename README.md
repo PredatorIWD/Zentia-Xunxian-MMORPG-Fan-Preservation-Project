@@ -37,7 +37,7 @@ I have worked on searching for, researching, and reverse-engineering Zentia/Xunx
 
 # Archiving
 
-I have previously uploaded most of my files to [this Internet Archive page](https://archive.org/details/Xunxian-Zentia-MMORPG-Client-v7-0-26-1). However, constantly updating the page is very tedious since the site can be very fragile when updating items, so I won't bother with doing so constantly right now. I will at some later point dump all of my files there again.  
+I have previously uploaded most of my files to [this Internet Archive page](https://archive.org/details/Xunxian-Zentia-MMORPG-Client-v7-0-26-1). However, constantly updating the page is very tedious since the site can be very fragile when updating items, so I won't bother with doing that right now. I will dump all of my files there again at some later point.  
 That page already has the most important Zentia files anyway.
 
 This document itself will be the most up-to-date resource that lists which files I've archived.  
