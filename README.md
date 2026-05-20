@@ -72,11 +72,7 @@ This document itself will be the most up-to-date resource that lists which files
 **Important missing:** The actual full Malaysian server leak, and any other server files.
 
 **Private server clients:**  
-95版本客户端  
-104服客户端  
-105版本客户端  
-120仙途OL   
-仙路有你  
+**Have:** 95版本客户端, 104服客户端, 105版本客户端, 120仙途OL, 仙路有你  
 
 ---
 
