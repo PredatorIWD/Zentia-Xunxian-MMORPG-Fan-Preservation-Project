@@ -82,19 +82,19 @@ Archiving for preservation purposes, but also because most of these games should
 
 <small>I can't spend the huge amount of time scouring the internet for these game versions as I did for Zentia/Xunxian right now. But do contact me if you have more or missing games.</small>
 
-**Xunxian (mobile game)** (very similar game but for mobile, uses Unity instead of the in-house game engine and uses a different, uniquely custom encrypted, custom asset packing format with the custom container: `.pkg` (`PPkg1.0` / `50 50 6B 67 31 2E 30 00`), which I cracked and wrote an unpacker script for.)  
-**Have:** 18.5.0 20.2.0 21.2.0 24.1.0 25.1.0 26.2.0 27.3.0
+**Xunxian (mobile game)** (Very similar game but for mobile, uses Unity instead of the in-house game engine and uses a different, uniquely custom encrypted, custom asset packing format with the custom container: `.pkg` (`PPkg1.0` / `50 50 6B 67 31 2E 30 00`), which I cracked and wrote an unpacker script for.)  
+**Have:** 18.5.0 20.2.0 21.2.0 24.1.0 25.1.0 26.2.0 27.3.0 27.3.109
 
-**Blade & Sword 2 (刀剑2)** (uses different encrypted asset packing format `.spk` (`spkm1.0` / `73 70 6B 6D 31 2E 30 00`), didn't try to crack yet)  
-**Have:** 4.6.0.001_0? and 45 ManualPatch files [still available](https://d2.qq.com/down.shtml) for download.
+**Blade & Sword 2 (刀剑2)** (Same in-house game engine and its custom asset formats as Xunxian. Initial versions used a slightly different than usual .dpk/whpackage1.0 asset packing container format and unique custom asset encryption, while later versions used a different unique asset container format `.spk` (`spkm1.0` / `73 70 6B 6D 31 2E 30 00`) and unique custom encryption, I cracked the encryption and wrote an unpacker script for the first versions, while the newer versions already had closed-source unpacking tools made for it which I also have.)  
+**Have:** 1.0.0.1 (Closed beta test), 4.6.0.001_0? and 45 ManualPatch files ([still available](https://d2.qq.com/down.shtml)), Taiwan server leaked files along with the corresponding client
 
-**《勇者大冒险》手游** (Adventure of the Brave Mobile) (same in-house game engine and its custom asset formats used.)  
+**《勇者大冒险》手游** (Adventure of the Brave Mobile) (Same in-house game engine and its custom asset formats as Xunxian.)  
 **Have:** 1.4.10 1.5.1 1.6.4
 
-**《勇者大冒险》端游** (Adventure of the Brave PC) (Global version published on Steam as "[Global Adventures](https://store.steampowered.com/app/565020/Global_Adventures/)") (same in-house game engine and its custom asset formats used.)  
+**《勇者大冒险》端游** (Adventure of the Brave PC) (Global version published on Steam as "[Global Adventures](https://store.steampowered.com/app/565020/Global_Adventures/)") (Same in-house game engine and its custom asset formats as Xunxian.)  
 **Have:** 1.3.41.1 (last Steam version for the global release "Global Adventures")
 
-**《妄想山海》(Wangxiang Shanhai / Fancy World / Chimeraland)** (PC and mobile versions), [shanhai.qq.com](https://shanhai.qq.com/), [Steam](https://store.steampowered.com/app/1913730/Chimeraland/), [22-Jul-2020](https://www.pixelgame.net/pixelsoft/english/wangxiang) to today? (Global version "Chimeraland" shut down on [30-Mar-2024](https://mmos.com/news/chimeraland-shutting-down-on-march-30)), (uses different, uniquely custom encrypted, custom asset packing format with the custom container: `.dpk` (`PPkg1.0` / `50 50 6B 67 31 2E 30 00`), which I cracked and wrote an unpacker script for.)  
+**《妄想山海》(Wangxiang Shanhai / Fancy World / Chimeraland)** (PC and mobile versions), [shanhai.qq.com](https://shanhai.qq.com/), [Steam](https://store.steampowered.com/app/1913730/Chimeraland/), [22-Jul-2020](https://www.pixelgame.net/pixelsoft/english/wangxiang) to today? (Global version "Chimeraland" shut down on [30-Mar-2024](https://mmos.com/news/chimeraland-shutting-down-on-march-30)), (Uses a different, uniquely custom encrypted, custom asset packing format with the custom container: `.dpk` (`PPkg1.0` / `50 50 6B 67 31 2E 30 00`), which I cracked and wrote an unpacker script for.)  
 **Have:** PC: 2.3.1.25 (last version published [on Steam](https://store.steampowered.com/app/1913730/Chimeraland/), 15-Dec-2023), Chinese mobile versions: 2.0.5 2.0.6 2.0.7 2.0.9 2.0.10 2.0.11 2.0.12, Global mobile versions: 1.0.5 1.0.7 1.0.8 2.0.2 2.2.1 2.3.1  
 
 # Reverse engineering
@@ -142,7 +142,7 @@ Servers online: [Closed Beta Test start 14-Jul-2010](https://web.archive.org/web
 PC MMORPG  
 Official site: mx.qq.com, [Steam](https://store.steampowered.com/app/565020/Global_Adventures/)  
 Servers online: 2014 to Unknown when it shut down (Global version [29-Dec-2017 to ~16-Feb-2018](https://store.steampowered.com/app/565020/Global_Adventures/))  
-**Format status: Cracked.** This game packs assets into the same `whpackage1.0` structured proprietary format, but it uses its own completely different custom encryption that is different than even the one from the mobile version of the game.    
+**Format status: Cracked.** This game packs assets into the same `whpackage1.0` structured proprietary format, but it uses its own completely different custom encryption that is different than even the one from the mobile version of the game.  
 
 - **《勇者大冒险》手游** (Adventure of the Brave Mobile), [mxm.qq.com](https://web.archive.org/web/20200308004836/https://mxm.qq.com/)  
 Mobile MMORPG  
