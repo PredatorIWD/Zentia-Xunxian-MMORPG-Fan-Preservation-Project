@@ -1,6 +1,22 @@
 # Zentia / Xunxian /《寻仙》MMORPG - Fan Preservation Project
 
-### Games summary:
+## Table of Contents
+
+- [Game summary](#games-summary)
+- [Purpose](#purpose)
+- [My background](#my-background)
+- [Current progress](#current-progress)
+  - [Archiving](#archiving)
+    - [Archiving Zentia (2010-2012)](#archiving-zentia-2010-2012)
+    - [Archiving Xunxian (2008-Today)](#archiving-xunxian-2008-today)
+    - [Archived versions of other games from the same developer](#archived-versions-of-other-games-from-the-same-developer)
+  - [Reverse engineering](#reverse-engineering)
+    - [Some of the more important completed tasks](#some-of-the-more-important-completed-tasks)
+    - [Reverse engineering game asset packing format: `whpackage1.0` / `whsc1.0` / .dpk](#reverse-engineering-game-asset-packing-format-whpackage10--whsc10--dpk)
+- [Publishing all of the files and the actual reverse-engineering work](#publishing-all-of-the-files-and-the-actual-reverse-engineering-work)
+- [Want to help?](#want-to-help)
+
+## Game summary:
 
 - **《寻仙》(Xunxian)** (Also called《新寻仙》(New Xunxian) [since 18-Dec-2012](https://baike.baidu.com/item/%E6%96%B0%E5%AF%BB%E4%BB%99/1634935))  
 PC MMORPG  
@@ -17,10 +33,10 @@ Servers online: [Closed Beta Test start 14-Jul-2010](https://web.archive.org/web
 Servers online: [1-Aug-2017](https://www.pixelgame.net/pixelsoft/english/xunxiansy) to present  
 [iOS](https://apps.apple.com/cn/app/%E5%AF%BB%E4%BB%99/id1186647303) and Android MMORPG
 
-### Purpose:
+## Purpose:
 The end goal of this fan project is preserving everything Xunxian-related for the sake of gaming, artistic, and cultural history, but also for research and educational purposes.
 
-### My background:
+## My background:
 I played and enjoyed Zentia early on when it came out in 2010 for a few hundred hours on a free-to-play account only, and now I want to work to preserve and reverse-engineer that game so that everyone else can one day also have that experience instead of it being lost forever.  
 
 I have worked on searching for, researching, and reverse-engineering Zentia/Xunxian-related files on and off, little by little when I had the time, for multiple years, mostly since 2023, but there are still a lot of files left to be found and archived, and even more things to be reverse-engineered.
@@ -68,7 +84,7 @@ This document itself will be the most up-to-date resource that lists which files
 **Important missing:** Almost all before ManualPatch2.3.23.1-2.3.24.1.exe, and I need ManualPatch8.0.13.1-8.0.14.1.exe specifically (maybe also named ManualPatch8.0.13.1-8.0.14.1-SD.exe)
 
 **Server files:**  
-**Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **partial** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
+**Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **incomplete** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
 **Important missing:** The actual full Malaysian server leak, and any other server files.
 
 **Private server clients:**  
@@ -99,7 +115,7 @@ Archiving for preservation purposes, but also because most of these games should
 
 # Reverse engineering
 
-I have learned a lot about the game, prepared and reverse-engineered important parts around the game that will make a lot of later work a lot easier, but there is still a lot to do and currently, the next big step is still cracking the client network packet encryption, which, like most other things around reverse-engineering this game, doesn't seem too easy.
+I have learned a lot about the game, prepared and reverse-engineered important parts around the game that will make a lot of later work a lot easier, but there is still a lot to do and currently, the game is still not playable and the next big step is still cracking the client network packet encryption, which, like most other things around reverse-engineering this game, doesn't seem too easy.
 
 ### Some of the more important completed tasks:
 - Reverse-engineered the very complex custom game asset `.dpk` archive package `whpackage1.0` format and its v1 multi-stage custom encryption. Wrote a decryptor/unpacker for it.
@@ -158,6 +174,36 @@ I have freely shared my work in some small circles online already and plan to at
 3. Publishing any reverse-engineering or special archiving work now could make the official game developers change how those systems work, which could easily make it much harder or impossible from that point onwards to actually preserve certain parts of the game for the sake of video game history.  
 
 In case you are preserving another old but dead game that is utilizing any of the custom and complex game asset packing formats listed here that I have cracked, you can contact me and I may try to unpack/crack those asset files for you. Or, in case you have any other questions or comments, feel free to contact me at: luka.celebic12 AT gmail.com 
+
+
+# Want to help?
+
+Since I can't know if the many people who are now messaging me about Xunxian are actual true fans of the game that just want to help preserve it or private server owners who want to profit off of my tools, I can't easily share my reverse-engineering work with just anyone.
+
+So for anyone that wants to help as just a genuine fan of the game, they can:
+
+- Help archive the game by locating old (2008-2012) client versions or patches of the game for any version **below** 3.X.X.X.  
+
+    - You can do so by searching all over the internet for it, gaming communities, forums, file hosting websites, reverse-engineering websites, all peer-to-peer networks etc. Especially in China. Especially any old P2P networks in China where these files were likely to have been shared in 2008-2012.  
+    Post requests for help in locating these files in those communities online and link back to this GitHub page.  
+
+    - Since the game was [released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
+    Try to find clients that were specific to some of these other regions, since some of the game clients were translated in other languages and published by separate game publishers on separate websites hosting the game files.  
+    For example in Korea, Xunxian had a separate client, was published by "CJ Internet" and was called "심선 온라인" (Simseon Online).  
+
+    - There are also some Chinese old CD preservation groups that digitize and upload old CDs that were distributed in some Chinese magazines and places like that which contained many files on them including game clients since back in those days the internet was much slower and less stable for downloading large game client installers in the browser.  
+    Find and properly search through these collections for any discs between 2008-2012, especially 2008/2009.  
+
+    - The biggest help (aside from the game source code itself leaking or there being an entirely new server-side file leak) would be to just find the **complete** Malaysian server-side files leak.  
+    Although from what I understand that is being monopolized by private server owners in China and won't be shared.  
+    The server-side files that are shared/sold online seem to all be incomplete, or at best look like they are complete inside a compressed .zip archive when looking at it with WinRAR/7-zip, but the data inside the archive is actually still incomplete, since when looking at the **raw data** of the .zip archive through a hex editor you see that some of the data inside was zeroed out manually only **after** actually being compressed, leading to the archive viewers to still display correct metadata as if all the files were there, but no longer have the actual data of some files at all.  
+
+- If you know how to reverse-engineer, you can help by:  
+
+  1. Cracking the client-side network packet encryption.  
+
+  2. Unpacking/dumping the unpacked Xunxian's main game executable tty3d.exe, which is packed with Tencent Protect (TenProtect/Anti-Cheat Expert/Tersafe/TP3), so that I can decompile the executable and reverse-engineer the newer, v2 version of the .dpk/whpackage1.0 game asset packing encryption. While at it, it would be nice if you could unpack all packed binaries for future RE work.  
+  3. Reverse-engineering any other part of the game client or leaked incomplete Malaysian server-side files you want and sending your work.  
 
 ---
 
