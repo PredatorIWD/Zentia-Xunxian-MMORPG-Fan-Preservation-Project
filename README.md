@@ -1,5 +1,12 @@
 # Zentia / Xunxian /《寻仙》MMORPG - Fan Preservation Project
 
+> [!IMPORTANT]
+> **File help request!**  
+>
+> Any and all Zentia/Xunxian-related files can be incredibly important to the proper preservation of this game, especially any files for the game versions below 3.X.X.X.  
+> In case you or someone you know played this game long ago, please search that PC, any old devices, laptops, file backups, and old USB drives for each of these keywords: Zentia, Xunxian, ManualPatch, 寻仙  
+> And contact me in case you find **anything** at: luka.celebic12 AT gmail.com 
+
 ## Table of Contents
 
 - [Game summary](#games-summary)
@@ -40,14 +47,6 @@ The end goal of this fan project is preserving everything Xunxian-related for th
 I played and enjoyed Zentia early on when it came out in 2010 for a few hundred hours on a free-to-play account only, and now I want to work to preserve and reverse-engineer that game so that everyone else can one day also have that experience instead of it being lost forever.  
 
 I have worked on searching for, researching, and reverse-engineering Zentia/Xunxian-related files on and off, little by little when I had the time, for multiple years, mostly since 2023, but there are still a lot of files left to be found and archived, and even more things to be reverse-engineered.
-
-> [!IMPORTANT]
-> **File help request!**  
->
-> Any and all Zentia/Xunxian-related files can be incredibly important to the proper preservation of this game, especially any files for the game versions below 3.X.X.X.  
-> In case you or someone you know played this game long ago, please search that PC, any old devices, laptops, file backups, and old USB drives for each of these keywords: Zentia, Xunxian, ManualPatch, 寻仙  
-> And contact me in case you find **anything** at: luka.celebic12 AT gmail.com 
-
 
 # Current progress:
 
