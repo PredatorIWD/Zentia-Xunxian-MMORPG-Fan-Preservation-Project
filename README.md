@@ -4,7 +4,7 @@
 > **File help request!**  
 >
 > Any and all Zentia/Xunxian-related files can be incredibly important to the proper preservation of this game, especially any files for the game versions below 3.X.X.X.  
-> In case you or someone you know played this game long ago, please search that PC, any old devices, laptops, file backups, and old USB drives for each of these keywords: Zentia, Xunxian, ManualPatch, 寻仙  
+> In case you or someone you know played this game long ago (especially in 2008-2012), please search that PC, any old devices, laptops, file backups, and old USB drives for each of these keywords: Zentia, Xunxian, ManualPatch, 寻仙  
 > And contact me in case you find **anything** at: luka.celebic12 AT gmail.com 
 
 ## Table of Contents
@@ -74,17 +74,16 @@ This document itself will be the most up-to-date resource that lists which files
 ### Archiving Xunxian (2008-Today):
 
 **Full clients** (0.8306.X.X? to 8.1.1.1+ exist):  
-**Have:** 3.0.21.1 3.0.4.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1* 8.0.3.1* 8.1.1.1*  
-<small>*Versions were installed by the newer online installers which maybe can automatically patch the game further with all the currently available patches.</small>  
-**Important missing:** All before 3.X.X.X, especially 0.8306.X.X
+**Have:** 3.0.21.1 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1  
+**Important missing:** All before 3.X.X.X, especially 0.8105.X/0.8306.X and before  
 
 **ManualPatch files:**  
 **Have:** A lot after ManualPatch2.3.23.1-2.3.24.1.exe  
-**Important missing:** Almost all before ManualPatch2.3.23.1-2.3.24.1.exe, and I need ManualPatch8.0.13.1-8.0.14.1.exe specifically (maybe also named ManualPatch8.0.13.1-8.0.14.1-SD.exe)
+**Important missing:** Almost all before ManualPatch2.3.23.1-2.3.24.1.exe  
 
 **Server files:**  
 **Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **incomplete** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
-**Important missing:** The actual full Malaysian server leak, and any other server files.
+**Important missing:** The actual full Malaysian server leak, and any other server files.  
 
 **Private server clients:**  
 **Have:** 95版本客户端, 104服客户端, 105版本客户端, 120仙途OL, 仙路有你  
