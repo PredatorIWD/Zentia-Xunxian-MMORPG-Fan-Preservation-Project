@@ -73,8 +73,8 @@ This document itself will be the most up-to-date resource that lists which files
 
 ### Archiving Xunxian (2008-Today):
 
-**Full clients** (0.8306.X.X? to 8.1.1.1+ exist):  
-**Have:** 3.0.21.1 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1  
+**Full clients** (0.8105.X? to 8.X.X.X+ exist):  
+**Have:** 3.0.21.1 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
 **Important missing:** All before 3.X.X.X, especially 0.8105.X/0.8306.X and before  
 
 **ManualPatch files:**  
@@ -137,14 +137,12 @@ Not having to reverse-engineer the container format itself again, even though th
 
 ### Games that use the `whpackage1.0` format:
 
-> Information below may be incomplete or incorrect. Submit a PR/contact in case you find an error.
-
 - **《寻仙》(Xunxian)** (Also called《新寻仙》(New Xunxian) [since 18-Dec-2012](https://baike.baidu.com/item/%E6%96%B0%E5%AF%BB%E4%BB%99/1634935))  
 PC MMORPG  
 Official site: [xx.qq.com](https://xx.qq.com/)  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to present  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
-**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1. Didn't crack the v2 encryption used after.** I need the game client's tty3d.exe unpacked from Tencent Protect (TenProtect/Anti-Cheat Expert/Tersafe/TP3) first.
+**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1.** Didn't crack the v2 encryption used after but I know how to do so, I just don't care to commit the time to it as I just care about the very old version of the game from 2010-2012 which only uses the v1 encryption.  
 
 - **Zentia** (Global EU/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
@@ -200,9 +198,9 @@ So for anyone that wants to help as just a genuine fan of the game, they can:
 
   1. Cracking the client-side network packet encryption.  
 
-  2. Unpacking/dumping the unpacked Xunxian's main game executable tty3d.exe, which is packed with Tencent Protect (TenProtect/Anti-Cheat Expert/Tersafe/TP3), so that I can decompile the executable and reverse-engineer the newer, v2 version of the .dpk/whpackage1.0 game asset packing encryption. While at it, it would be nice if you could unpack all packed binaries for future RE work.  
-  3. Reverse-engineering any other part of the game client or leaked incomplete Malaysian server-side files you want and sending your work.  
+  2. Reverse-engineering any other part of the game client or leaked incomplete Malaysian server-side files you want and sending your work.  
 
+  3. Unpacking/dumping all of the packed game .exe and .dll files, which are packed with Tencent Protect (TenProtect/Anti-Cheat Expert/Tersafe/TP3), so that I can decompile and reverse-engineer those newer files later when needed too.  
 ---
 
 <small>*Information mentioned in this project might not be fully correct.*</small>  
