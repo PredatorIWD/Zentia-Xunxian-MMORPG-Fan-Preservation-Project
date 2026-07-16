@@ -74,12 +74,12 @@ This document itself will be the most up-to-date resource that lists which files
 ### Archiving Xunxian (2008-Today):
 
 **Full clients** (0.8105.X? to 8.X.X.X+ exist):  
-**Have:** 3.0.21.1 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
-**Important missing:** All before 3.X.X.X, especially 0.8105.X/0.8306.X and before  
+**Have:** 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
+**Important missing:** All before 3.X.X.X, especially clients around versions ~0.8105.X ~0.8306.X and before  
 
 **ManualPatch files:**  
 **Have:** A lot after ManualPatch2.3.23.1-2.3.24.1.exe  
-**Important missing:** Almost all before ManualPatch2.3.23.1-2.3.24.1.exe  
+**Important missing:** From 2.1.25.1 to 2.3.23.1, from 2.0.25.1 to 2.0.26.1, all before ManualPatch1.0.46.1-1.1.4.1.exe  
 
 **Server files:**  
 **Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **incomplete** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
@@ -185,9 +185,9 @@ So for anyone that wants to help as just a genuine fan of the game, they can:
 
     - Since the game was [released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
     Try to find clients that were specific to some of these other regions, since some of the game clients were translated in other languages and published by separate game publishers on separate websites hosting the game files.  
-    For example in Korea, Xunxian had a separate client, was published by "CJ Internet" and was called "심선 온라인" (Simseon Online).  
+    For example in Korea, Xunxian had a separate client, was published by "CJ Internet" and was called "심선 온라인" (Simseon Online). You can search and ask around in Korean gaming communities like section.cafe.naver.com/ca-fe, Korean gaming magazine CD preservation groups etc.  
 
-    - There are also some Chinese old CD preservation groups that digitize and upload old CDs that were distributed in some Chinese magazines and places like that which contained many files on them including game clients since back in those days the internet was much slower and less stable for downloading large game client installers in the browser.  
+    - There are also some Chinese (and Korean) old CD preservation groups that digitize and upload old CDs that were distributed in some Chinese magazines and places like that which contained many files on them including game clients since back in those days the internet was much slower and less stable for downloading large game client installers in the browser.  
     Find and properly search through these collections for any discs between 2008-2012, especially 2008/2009.  
 
     - The biggest help (aside from the game source code itself leaking or there being an entirely new server-side file leak) would be to just find the **complete** Malaysian server-side files leak.  
