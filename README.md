@@ -121,7 +121,10 @@ I have learned a lot about the game, prepared and reverse-engineered important p
 - Have access to the, now very easily readable, GUI logic for the entire game
 - Set up the game to have arbitrary code execution from within the GUI environment
 - Set up the game to utilize only the unpacked game assets (with watching for dynamic changes)
-- Mapped all Login and Character Select opcodes
+- Mapped all Login and Character Select opcodes  
+<br>
+
+![](game_asset_viewer.gif)  
 
 ## Reverse engineering game asset packing format: `whpackage1.0` / `whsc1.0` / .dpk
 
