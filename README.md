@@ -116,8 +116,8 @@ Archiving for preservation purposes, but also because most of these games should
 I have learned a lot about the game, prepared and reverse-engineered important parts around the game that will make a lot of later work a lot easier, but there is still a lot to do and currently, the game is still not playable and the next big step is still cracking the client network packet encryption, which, like most other things around reverse-engineering this game, doesn't seem too easy.
 
 ### Some of the more important completed tasks:
-- Reverse-engineered the very complex custom game asset `.dpk` archive package `whpackage1.0` format and its v1 multi-stage custom encryption. Wrote a decryptor/unpacker for it.
-- Reverse-engineered most of the custom game asset formats, including the more complex 3D asset formats: `.vmm` (`20 00 00 00 56 4D 4D 00`), `.pmf` (`1C 00 00 00 50 4D 46 00`), `.short`. Wrote a 3D viewer for them.
+- Reverse-engineered the very complex custom game asset `.dpk` archive package `whpackage1.0` format with its multi-stage custom encryptions. Wrote a decryptor/unpacker for it.
+- Reverse-engineered most of the custom game asset formats, including the more complex 3D asset formats: `.vmm` (`20 00 00 00 56 4D 4D 00`), `.pmf` (`1C 00 00 00 50 4D 46 00`), `.psf` (`50 53 46 00 C8`), `.paf` (`50 41 46 00 64`/`50 41 46 00 65`), `.short`. Wrote a 3D viewer for them.
 - Have access to the, now very easily readable, GUI logic for the entire game
 - Set up the game to have arbitrary code execution from within the GUI environment
 - Set up the game to utilize only the unpacked game assets (with watching for dynamic changes)
@@ -145,7 +145,7 @@ PC MMORPG
 Official site: [xx.qq.com](https://xx.qq.com/)  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to present  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
-**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1.** Didn't crack the v2 encryption used after but I know how to do so, I just don't care to commit the time to it as I just care about the very old version of the game from 2010-2012 which only uses the v1 encryption.  
+**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1 and cracked the v2 encryption used for all versions after.**
 
 - **Zentia** (Global EU/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
@@ -207,4 +207,5 @@ So for anyone that wants to help as just a genuine fan of the game, they can:
 ---
 
 <small>*Information mentioned in this project might not be fully correct.*</small>  
-<small>*This is an unofficial fan educational research project not affiliated with any company or official developers. All assets and intellectual property belong to their respective owners.*</small>
+<small>*This is an unofficial fan educational research project not affiliated with any of the official companies or official developers.*</small>  
+<small>*All game assets and intellectual property belong to their respective owners.*</small>  
