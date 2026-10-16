@@ -44,7 +44,7 @@ Servers online: [1-Aug-2017](https://www.pixelgame.net/pixelsoft/english/xunxian
 The end goal of this fan project is preserving everything Xunxian-related for the sake of gaming, artistic, and cultural history, but also for research and educational purposes.
 
 ## My background:
-I played and enjoyed Zentia early on when it came out in 2010 for a few hundred hours on a free-to-play account only, and now I want to work to preserve and reverse-engineer that game so that everyone else can one day also have that experience instead of it being lost forever.  
+I played and enjoyed Zentia early on when it came out in 2010 for a few hundred hours on a free-to-play account only, and now I want to work to preserve and reverse-engineer that game so that everyone else can one day also have that experience instead of it being lost forever.
 
 I have worked on searching for, researching, and reverse-engineering Zentia/Xunxian-related files on and off, little by little when I had the time, for multiple years, mostly since 2023, but there are still a lot of files left to be found and archived, and even more things to be reverse-engineered.
 
@@ -73,9 +73,9 @@ This document itself will be the most up-to-date resource that lists which files
 
 ### Archiving Xunxian (2008-Today):
 
-**Full clients** (0.8105.XX? to 8.X.X.X+ exist):  
+**Full clients** (~0.8XXX.XX? to 8.X.X.X+ exist):  
 **Have:** 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
-**Important missing:** All before 3.X.X.X, especially clients around versions ~0.8105.XX ~0.8306.XX and before  
+**Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?  
 
 **ManualPatch files:**  
 **Have:** Most after ManualPatch2.3.23.1-2.3.24.1.exe  
@@ -86,7 +86,8 @@ This document itself will be the most up-to-date resource that lists which files
 **Important missing:** The actual full Malaysian server leak, and any other server files.  
 
 **Private server clients:**  
-**Have:** 95版本客户端, 104服客户端, 105版本客户端, 120仙途OL, 仙路有你  
+**Have:** 10.8复古 (Retro), 95版本客户端, 104服客户端, 105版本客户端, 105下载包1 (XNXM下载包2_version1), 120仙途OL, 仙路有你  
+10.8复古 (Retro) is a private server that, according to some of it's raw client files I could decrypt, seems to have been actually based on the game version 2.3.25.13, and it seems to use a unique asset encryption that I didn't try cracking yet.  
 
 ---
 
@@ -113,15 +114,15 @@ Archiving for preservation purposes, but also because most of these games should
 
 # Reverse engineering
 
-I have learned a lot about the game, prepared and reverse-engineered important parts around the game that will make a lot of later work a lot easier, but there is still a lot to do and currently, the game is still not playable and the next big step is still cracking the client network packet encryption, which, like most other things around reverse-engineering this game, doesn't seem too easy.
+A huge amount of work has been done with cumulative months worth of effort put into it, but there is still a lot left to do. Currently login, character creation/loading, entering the game world, movement, some NPC placement and interactions, some UI functionalities work, but it's still not properly playable and won't be for many months to come.  
 
 ### Some of the more important completed tasks:
+- Reverse-engineered most of the very complex networking behaviour
 - Reverse-engineered the very complex custom game asset `.dpk` archive package `whpackage1.0` format with its multi-stage custom encryptions. Wrote a decryptor/unpacker for it.
 - Reverse-engineered most of the custom game asset formats, including the more complex 3D asset formats: `.vmm` (`20 00 00 00 56 4D 4D 00`), `.pmf` (`1C 00 00 00 50 4D 46 00`), `.psf` (`50 53 46 00 C8`), `.paf` (`50 41 46 00 64`/`50 41 46 00 65`), `.short`. Wrote a 3D viewer for them.
 - Have access to the, now very easily readable, GUI logic for the entire game
 - Set up the game to have arbitrary code execution from within the GUI environment
 - Set up the game to utilize only the unpacked game assets (with watching for dynamic changes)
-- Mapped all Login and Character Select opcodes  
 <br>
 
 ![](game_asset_viewer.gif)  
@@ -131,12 +132,9 @@ I have learned a lot about the game, prepared and reverse-engineered important p
 Magic bytes `whpackage1.0`: `77 68 70 61 63 6B 61 67 65 31 2E 30`  
 Magic bytes `whsc1.0`: `77 68 73 63 31 2E 30`  
 
-Files with the `.dpk` extension that start with the ASCII magic bytes `whpackage1.0` (main header) / `whsc1.0` (chunk header) are a very complex, custom, proprietary game asset packing archive file format custom container that uses compression and custom encryption. It seems to have been used since some time before 2008 to the present day only by the Chinese game development company "[Pixel Soft](https://www.pixelgame.net)".
+Files with the `.dpk` extension that start with the ASCII magic bytes `whpackage1.0` (main header) / `whsc1.0` (chunk header) are a complex, custom, proprietary game asset packing archive file format custom container that uses compression and custom encryption. It seems to have been used since some time before 2008 to the present day only by the Chinese game development company "[Pixel Soft](https://www.pixelgame.net)".
 
-It took weeks of active work, dozens of angles of attack, multiple brute-force and analysis scripts, and thousands of assembly lines to be read from both static and dynamic analysis of the client, ManualPatch, and leaked server binary files, but I have managed to reverse-engineer the first version of this format, which was used since the game's release in 2008 until late 2015/early 2016, when the encryption was silently changed somewhere between the versions 3.9.57.1-3.9.73.1. This means I can unpack older Xunxian's and all of Zentia's assets.  
-
-I then went on to crack the custom encryptions of other asset packing archive formats of other related games for game preservation sake, for education, but also for the challenge and fun of it too. They all use vastly different and mostly custom encryptions and tricks but it took me around a day's work to reverse-engineer and write a decryptor/unpacker for each of them.  
-Not having to reverse-engineer the container format itself again, even though that's the easiest part, and by now knowing the "mind" of the developers and what they will probably do along with some experience and the fact that Zentia's custom multi-stage encryption was much more complex is what allowed me to crack those other encryptions much faster.  
+The v1 encryption was used since the game's release in 2008 until late 2015/early 2016, when the encryption was silently changed into v2 somewhere between the versions 3.9.57.1-3.9.73.1.
 
 ### Games that use the `whpackage1.0` format:
 
@@ -145,13 +143,13 @@ PC MMORPG
 Official site: [xx.qq.com](https://xx.qq.com/)  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to present  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
-**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1 and cracked the v2 encryption used for all versions after.**
+**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1, and the v2 encryption used for all versions after.**
 
 - **Zentia** (Global EU/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
 Official site: z.us.changyou.com, zentiathegame.com  
 Servers online: [Closed Beta Test start 14-Jul-2010](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) to [shutdown 13-Aug-2012 11:59PM PDT](https://web.archive.org/web/20260302051524/https://mmohuts.com/news/changyou-shutting-down-zentia)  
-**Format status: Cracked.**
+**Format status: Cracked.** (v1 Xunxian)
 
 - **《勇者大冒险》端游** (Adventure of the Brave PC) (Global version published on Steam as "[Global Adventures](https://store.steampowered.com/app/565020/Global_Adventures/)")  
 PC MMORPG  
@@ -197,15 +195,9 @@ So for anyone that wants to help as just a genuine fan of the game, they can:
     Although from what I understand that is being monopolized by private server owners in China and won't be shared.  
     The server-side files that are shared/sold online seem to all be incomplete, or at best look like they are complete inside a compressed .zip archive when looking at it with WinRAR/7-zip, but the data inside the archive is actually still incomplete, since when looking at the **raw data** of the .zip archive through a hex editor you see that some of the data inside was zeroed out manually only **after** actually being compressed, leading to the archive viewers to still display correct metadata as if all the files were there, but no longer have the actual data of some files at all.  
 
-- If you know how to reverse-engineer, you can help by:  
-
-  1. Cracking the client-side network packet encryption.  
-
-  2. Reverse-engineering any other part of the game client or leaked incomplete Malaysian server-side files you want and sending your work.  
-
-  3. Unpacking/dumping all of the packed game .exe and .dll files, which are packed with Tencent Protect (TenProtect/Anti-Cheat Expert/Tersafe/TP3), so that I can decompile and reverse-engineer those newer files later when needed too.  
+- If you have done any reverse-engineering or decompiling of any of these games, you can help by sending your work. Potentially also unpacking/dumping all of the packed game .exe and .dll files, which are packed with Tencent Protect (TenProtect/Anti-Cheat Expert/Tersafe/TP3).  
 ---
 
 <small>*Information mentioned in this project might not be fully correct.*</small>  
-<small>*This is an unofficial fan educational research project not affiliated with any of the official companies or official developers.*</small>  
+<small>*This is an unofficial, non-commercial, fan educational research project not affiliated with any of the official companies or official developers.*</small>  
 <small>*All game assets and intellectual property belong to their respective owners.*</small>  
