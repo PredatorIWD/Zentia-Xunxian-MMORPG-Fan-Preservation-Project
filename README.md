@@ -119,14 +119,15 @@ Archiving for preservation purposes, but also because most of these games should
 **Have:** 1.3.41.1 (last Steam version for the global release "Global Adventures")
 
 **《妄想山海》(Wangxiang Shanhai / Fancy World / Chimeraland)** (PC and mobile versions), [shanhai.qq.com](https://shanhai.qq.com/), [Steam](https://store.steampowered.com/app/1913730/Chimeraland/), [22-Jul-2020](https://www.pixelgame.net/pixelsoft/english/wangxiang) to today? (Global version "Chimeraland" shut down on [30-Mar-2024](https://mmos.com/news/chimeraland-shutting-down-on-march-30)), (Uses a different, uniquely custom encrypted, custom asset packing format with the custom container: `.dpk` (`PPkg1.0` / `50 50 6B 67 31 2E 30 00`), which I cracked and wrote an unpacker script for.)  
+(For those interested in reverse-engineering Chimeraland I suggest reading [my comment on RaGEZONE](https://forum.ragezone.com/threads/i-joined-for-the-express-purpose-of-archiving-an-mmo-i-once-played.1224804/#post-9451098) as a start.)  
 **Have:** PC: 2.3.1.25 (last version published [on Steam](https://store.steampowered.com/app/1913730/Chimeraland/), 15-Dec-2023), Chinese mobile versions: 2.0.5 2.0.6 2.0.7 2.0.9 2.0.10 2.0.11 2.0.12, Global mobile versions: 1.0.5 1.0.7 1.0.8 2.0.2 2.2.1 2.3.1  
 
 # Reverse engineering
 
-A huge amount of work has been done with cumulative months worth of effort put into it, but there is still a lot left to do. Currently login, character creation/loading, entering the game world, movement, some NPC placement and interactions, some UI functionalities work, but it's still not properly playable and won't be for many months to come.  
+A huge amount of work has been done with cumulative months worth of effort put into it, but there is still a lot left to do. Currently login, character creation/loading, entering the game world, movement, some NPC placement and interactions, some combat systems, some UI functionalities and other systems work, but it's still not properly playable and won't be for many months to come.  
 
 ### Some of the more important completed tasks:
-- Reverse-engineered most of the very complex networking behaviour
+- Reverse-engineered most of the very complex networking, allowing character management and the most important in-game gameplay systems to work 
 - Reverse-engineered the very complex custom game asset `.dpk` archive package `whpackage1.0` format with its multi-stage custom encryptions. Wrote a decryptor/unpacker for it.
 - Reverse-engineered most of the custom game asset formats, including the more complex 3D asset formats: `.vmm` (`20 00 00 00 56 4D 4D 00`), `.pmf` (`1C 00 00 00 50 4D 46 00`), `.psf` (`50 53 46 00 C8`), `.paf` (`50 41 46 00 64`/`50 41 46 00 65`), `.short`. Wrote a 3D viewer for them.
 - Have access to the, now very easily readable, GUI logic for the entire game
