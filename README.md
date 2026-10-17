@@ -9,7 +9,7 @@
 
 ## Table of Contents
 
-- [Game summary](#games-summary)
+- [Xunxian games summary](#games-summary)
 - [Purpose](#purpose)
 - [My background](#my-background)
 - [Current progress](#current-progress)
@@ -23,22 +23,28 @@
 - [Publishing all of the files and the actual reverse-engineering work](#publishing-all-of-the-files-and-the-actual-reverse-engineering-work)
 - [Want to help?](#want-to-help)
 
-## Game summary:
+## Xunxian games summary:
 
 - **《寻仙》(Xunxian)** (Also called《新寻仙》(New Xunxian) [since 18-Dec-2012](https://baike.baidu.com/item/%E6%96%B0%E5%AF%BB%E4%BB%99/1634935))  
 PC MMORPG  
-Official site: [xx.qq.com](https://xx.qq.com/)  
-Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to present  
+Official site: [xx.qq.com](https://xx.qq.com)  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
+Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to today  
 
-- **Zentia** (Global EU/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
+- **Zentia** (Europe/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
-Official site: z.us.changyou.com, zentiathegame.com  
+Official sites: z.us.changyou.com, zentiathegame.com  
 Servers online: [Closed Beta Test start 14-Jul-2010](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) to [shutdown 13-Aug-2012 11:59PM PDT](https://web.archive.org/web/20260302051524/https://mmohuts.com/news/changyou-shutting-down-zentia)  
 
-- **《寻仙》** (Mobile version of the PC game of the same name with [some differences](https://www.pixelgame.net/pixelsoft/english/xunxiansy): "simplify the processes to make it more suitable for the growth rhythm of mobile games. At the same time, it would deepen pet-related gameplay and strengthen the interaction between players.")  
-Servers online: [1-Aug-2017](https://www.pixelgame.net/pixelsoft/english/xunxiansy) to present  
-[iOS](https://apps.apple.com/cn/app/%E5%AF%BB%E4%BB%99/id1186647303) and Android MMORPG
+- **《寻仙手游》(Xunxian Mobile)** ([Some differences](https://www.pixelgame.net/pixelsoft/english/xunxiansy): "simplify the processes to make it more suitable for the growth rhythm of mobile games. At the same time, it would deepen pet-related gameplay and strengthen the interaction between players.")  
+[iOS](https://apps.apple.com/cn/app/%E5%AF%BB%E4%BB%99/id1186647303) and Android MMORPG  
+Official site: [xxsy.qq.com](https://xxsy.qq.com)  
+Servers online: [1-Aug-2017](https://www.pixelgame.net/pixelsoft/english/xunxiansy) to today  
+
+- **《寻仙2》/《寻仙2.0》(Xunxian 2)** (Large remake of the game, upgraded engine, technical but also many visual changes)  
+PC MMORPG  
+Official site: [xx2.qq.com](https://xx2.qq.com/)  
+Servers online: Development-interaction test [31-Aug-2017](https://www.pixelgame.net/pixelsoft/site/history), unrestricted deletion test [30-Mar-2018](https://www.pixelgame.net/pixelsoft/site/history), unrestricted non-deletion test [9-Aug-2018](https://www.sohu.com/a/246247936_650760), to [15-Apr-2024](https://tousu.sina.com.cn/complaint/view/17375328958/) shutdown  
 
 ## Purpose:
 The end goal of this fan project is preserving everything Xunxian-related for the sake of gaming, artistic, and cultural history, but also for research and educational purposes.
@@ -97,7 +103,10 @@ Archiving for preservation purposes, but also because most of these games should
 
 <small>I can't spend the huge amount of time scouring the internet for these game versions as I did for Zentia/Xunxian right now. But do contact me if you have more or missing games.</small>
 
-**Xunxian (mobile game)** (Very similar game but for mobile, uses Unity instead of the in-house game engine and uses a different, uniquely custom encrypted, custom asset packing format with the custom container: `.pkg` (`PPkg1.0` / `50 50 6B 67 31 2E 30 00`), which I cracked and wrote an unpacker script for.)  
+**《寻仙2》/《寻仙2.0》(Xunxian 2)** (Same in-house game engine and its custom asset formats as Xunxian. The game got changed too much for me to care about spending time on it.)  
+**Have:** 1.0.1.4? (latest version, still [officially downloadable](https://xx2.qq.com/))
+
+**《寻仙手游》(Xunxian Mobile)** (Very similar game but for mobile, uses Unity instead of the in-house game engine and uses a different, uniquely custom encrypted, custom asset packing format with the custom container: `.pkg` (`PPkg1.0` / `50 50 6B 67 31 2E 30 00`), which I cracked and wrote an unpacker script for.)  
 **Have:** 18.5.0 20.2.0 21.2.0 24.1.0 25.1.0 26.2.0 27.3.0 27.3.109
 
 **Blade & Sword 2 (刀剑2)** (Same in-house game engine and its custom asset formats as Xunxian. Initial versions used a slightly different than usual .dpk/whpackage1.0 asset packing container format and unique custom asset encryption, while later versions used a different unique asset container format `.spk` (`spkm1.0` / `73 70 6B 6D 31 2E 30 00`) and unique custom encryption, I cracked the encryption and wrote an unpacker script for the first versions, while the newer versions already had closed-source unpacking tools made for it which I also have.)  
@@ -140,14 +149,14 @@ The v1 encryption was used since the game's release in 2008 until late 2015/earl
 
 - **《寻仙》(Xunxian)** (Also called《新寻仙》(New Xunxian) [since 18-Dec-2012](https://baike.baidu.com/item/%E6%96%B0%E5%AF%BB%E4%BB%99/1634935))  
 PC MMORPG  
-Official site: [xx.qq.com](https://xx.qq.com/)  
-Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to present  
+Official site: [xx.qq.com](https://xx.qq.com)  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
+Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to today  
 **Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1, and the v2 encryption used for all versions after.**
 
-- **Zentia** (Global EU/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
+- **Zentia** (Europe/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
-Official site: z.us.changyou.com, zentiathegame.com  
+Official sites: z.us.changyou.com, zentiathegame.com  
 Servers online: [Closed Beta Test start 14-Jul-2010](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) to [shutdown 13-Aug-2012 11:59PM PDT](https://web.archive.org/web/20260302051524/https://mmohuts.com/news/changyou-shutting-down-zentia)  
 **Format status: Cracked.** (v1 Xunxian)
 
@@ -157,11 +166,17 @@ Official site: mx.qq.com, [Steam](https://store.steampowered.com/app/565020/Glob
 Servers online: 2014 to Unknown when it shut down (Global version [29-Dec-2017 to ~16-Feb-2018](https://store.steampowered.com/app/565020/Global_Adventures/))  
 **Format status: Cracked.** This game packs assets into the same `whpackage1.0` structured proprietary format, but it uses its own completely different custom encryption that is different than even the one from the mobile version of the game.  
 
-- **《勇者大冒险》手游** (Adventure of the Brave Mobile), [mxm.qq.com](https://web.archive.org/web/20200308004836/https://mxm.qq.com/)  
+- **《勇者大冒险》手游** (Adventure of the Brave Mobile)  
 Mobile MMORPG  
+Official site: [mxm.qq.com](https://web.archive.org/web/20200308004836/https://mxm.qq.com/)  
 Servers online: [26-Mar-2015](https://www.yoyou.com/shipin/201503/2619719.html) to [10-Oct-2019](https://imotao.com/743.html)  
 **Format status: Cracked.** This game packs assets into the same `whpackage1.0` structured proprietary format, but it uses its own completely different custom encryption that is different than even the one from the PC version of the game.  
 
+- **《寻仙2》/《寻仙2.0》(Xunxian 2)** (Large remake of the game, upgraded engine, technical but also many visual changes)  
+PC MMORPG  
+Official site: [xx2.qq.com](https://xx2.qq.com/)  
+Servers online: Development-interaction test [31-Aug-2017](https://www.pixelgame.net/pixelsoft/site/history), unrestricted deletion test [30-Mar-2018](https://www.pixelgame.net/pixelsoft/site/history), unrestricted non-deletion test [9-Aug-2018](https://www.sohu.com/a/246247936_650760), to [15-Apr-2024](https://tousu.sina.com.cn/complaint/view/17375328958/) shutdown  
+**Format status: Cracked.** (Same as Adventure of the Brave PC)  
 
 # Publishing all of the files and the actual reverse-engineering work:
 
