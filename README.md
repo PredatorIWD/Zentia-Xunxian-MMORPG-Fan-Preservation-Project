@@ -31,7 +31,7 @@ Official site: [xx.qq.com](https://xx.qq.com)
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to today  
 
-- **Zentia** (Europe/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
+- **Zentia** (Europe/USA release of 《寻仙》 with minimal differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
 Official sites: z.us.changyou.com, zentiathegame.com  
 Servers online: [Closed Beta Test start 14-Jul-2010](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) to [shutdown 13-Aug-2012 11:59PM PDT](https://web.archive.org/web/20260302051524/https://mmohuts.com/news/changyou-shutting-down-zentia)  
@@ -72,7 +72,7 @@ This document itself will be the most up-to-date resource that lists which files
 **Important missing:** 1.3.X.X, 1.4.X.X
 
 **ManualPatch files** ([47 existed](https://web.archive.org/web/20120718224402/http://z.us.changyou.com/download/manual.shtml) in total. File name format: `ManualPatch<fromGameVersion>-<toGameVersion>.exe`. These contain whole game asset files that were updated from one version to the other inside.):  
-**Have:** (11 + 1 partial): 1.1.28.5-1.1.28.6 1.1.28.6-1.1.28.7-(partial) 1.1.29.19-1.1.29.21 1.3.66.10-1.3.66.11 1.3.66.11-1.3.66.12 1.4.25.16-1.4.25.17 1.4.25.17-1.4.25.18 1.4.25.18-1.4.25.19 1.4.25.19-1.4.25.20 1.4.25.21-1.4.25.22 1.4.25.26-1.4.25.27  
+**Have:** (10 + 1 partial): 1.1.28.5-1.1.28.6 1.1.28.6-1.1.28.7(partial, first 3.47MB out of 6.06MB) 1.1.29.19-1.1.29.21 1.3.66.10-1.3.66.11 1.3.66.11-1.3.66.12 1.4.25.16-1.4.25.17 1.4.25.17-1.4.25.18 1.4.25.18-1.4.25.19 1.4.25.19-1.4.25.20 1.4.25.21-1.4.25.22 1.4.25.26-1.4.25.27  
 **Important missing:** The rest from the linked 47 above. I think a few were probably uploaded to VirusTotal.com that can be downloaded, but an expensive enterprise account is needed to use the Advanced Search to find and download them.  
 
 ---
@@ -142,9 +142,7 @@ A huge amount of work has been done with cumulative months worth of effort put i
 Magic bytes `whpackage1.0`: `77 68 70 61 63 6B 61 67 65 31 2E 30`  
 Magic bytes `whsc1.0`: `77 68 73 63 31 2E 30`  
 
-Files with the `.dpk` extension that start with the ASCII magic bytes `whpackage1.0` (main header) / `whsc1.0` (chunk header) are a complex, custom, proprietary game asset packing archive file format custom container that uses compression and custom encryption. It seems to have been used since some time before 2008 to the present day only by the Chinese game development company "[Pixel Soft](https://www.pixelgame.net)".
-
-The v1 encryption was used since the game's release in 2008 until late 2015/early 2016, when the encryption was silently changed into v2 somewhere between the versions 3.9.57.1-3.9.73.1.
+Files with the `.dpk` extension that start with the ASCII magic bytes `whpackage1.0` (main header) / `whsc1.0` (chunk header) are a complex, custom, proprietary game asset packing archive file format custom container that uses compression and custom encryptions. It was used since some time before 2008 to the present day by the Chinese game development company "[Pixel Soft](https://www.pixelgame.net)".  
 
 ### Games that use the `whpackage1.0` format:
 
@@ -153,13 +151,13 @@ PC MMORPG
 Official site: [xx.qq.com](https://xx.qq.com)  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to today  
-**Format status: Cracked the v1 encryption used for all game versions until the patch 3.9.57.1-3.9.73.1, and the v2 encryption used for all versions after.**
+**Format status: Cracked the v1 encryption used until before 3.9.70.1 (late 2015/early 2016). Cracked v2 encryption used until before 8.3.0.1 (Oct 2026). Didn't crack v3 encryption used after.** The v3 version will probably need the Tencent Protect (TenProtect/Anti-Cheat Expert) that is used to pack the game .exe and .dll files to be reverse-engineered before being cracked.  
 
-- **Zentia** (Europe/USA release of 《寻仙》 with minor differences, initially codenamed "Project Z")  
+- **Zentia** (Europe/USA release of 《寻仙》 with minimal differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
 Official sites: z.us.changyou.com, zentiathegame.com  
 Servers online: [Closed Beta Test start 14-Jul-2010](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) to [shutdown 13-Aug-2012 11:59PM PDT](https://web.archive.org/web/20260302051524/https://mmohuts.com/news/changyou-shutting-down-zentia)  
-**Format status: Cracked.** (v1 Xunxian)
+**Format status: Cracked.** (Xunxian v1 encryption)
 
 - **《勇者大冒险》端游** (Adventure of the Brave PC) (Global version published on Steam as "[Global Adventures](https://store.steampowered.com/app/565020/Global_Adventures/)")  
 PC MMORPG  
@@ -211,7 +209,7 @@ So for anyone that wants to help as just a genuine fan of the game, they can:
     Although from what I understand that is being monopolized by private server owners in China and won't be shared.  
     The server-side files that are shared/sold online seem to all be incomplete, or at best look like they are complete inside a compressed .zip archive when looking at it with WinRAR/7-zip, but the data inside the archive is actually still incomplete, since when looking at the **raw data** of the .zip archive through a hex editor you see that some of the data inside was zeroed out manually only **after** actually being compressed, leading to the archive viewers to still display correct metadata as if all the files were there, but no longer have the actual data of some files at all.  
 
-- If you have done any reverse-engineering or decompiling of any of these games, you can help by sending your work. Potentially also unpacking/dumping all of the packed game .exe and .dll files, which are packed with Tencent Protect (TenProtect/Anti-Cheat Expert/Tersafe/TP3).  
+- If you have done any reverse-engineering or decompiling of any of these games, you can help by sending your work. Potentially also unpacking/dumping all of the packed game .exe and .dll files, which are packed with Tencent Protect (TenProtect/Anti-Cheat Expert).  
 ---
 
 <small>*Information mentioned in this project might not be fully correct.*</small>  
