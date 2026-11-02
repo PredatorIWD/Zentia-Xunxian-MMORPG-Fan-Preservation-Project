@@ -47,7 +47,7 @@ Official site: [xx2.qq.com](https://xx2.qq.com/)
 Servers online: Development-interaction test [31-Aug-2017](https://www.pixelgame.net/pixelsoft/site/history), unrestricted deletion test [30-Mar-2018](https://www.pixelgame.net/pixelsoft/site/history), unrestricted non-deletion test [9-Aug-2018](https://www.sohu.com/a/246247936_650760), to [15-Apr-2024](https://tousu.sina.com.cn/complaint/view/17375328958/) shutdown  
 
 ## Purpose:
-The end goal of this fan project is preserving everything Xunxian-related for the sake of gaming, artistic, and cultural history, but also for research and educational purposes.
+The end goal of this fan project is preserving everything Xunxian-related for the sake of gaming, artistic, and cultural history, but also for research and educational purposes.  
 
 ## My background:
 I played and enjoyed Zentia early on when it came out in 2010 for a few hundred hours on a free-to-play account only, and now I want to work to preserve and reverse-engineer that game so that everyone else can one day also have that experience instead of it being lost forever.
@@ -58,10 +58,14 @@ I have worked on searching for, researching, and reverse-engineering Zentia/Xunx
 
 # Archiving
 
-I have previously uploaded most of my files to [this Internet Archive page](https://archive.org/details/Xunxian-Zentia-MMORPG-Client-v7-0-26-1). However, constantly updating the page is very tedious since the site can be very fragile when updating items, so I won't bother with doing that right now. I will dump all of my files there again at some later point.  
+I have previously uploaded most of my files to [this Internet Archive page](https://archive.org/details/Xunxian-Zentia-MMORPG-Client-v7-0-26-1). However, constantly updating the page is very tedious since the site can be very fragile when updating 1000+ items, so I won't bother with doing that right now. I will dump all of my files there again at some later point.  
 That page already has the most important Zentia files anyway.
 
 This document itself will be the most up-to-date resource that lists which files I've archived.  
+
+Game clients of the same game versions from different regions, from what I have seen by comparing the decrypted raw files, actually mostly have the same content (outside of the translated text) with only a handful of tiny differences.  
+This means that, for example, the EU/USA release of the game (Zentia) which officially ended at 1.4.25.27, can be forcibly patched to a higher version with files from the later Chinese clients, while making sure the new text is translated and any conflicts are resolved, of course.  
+It would also be possible to forcibly patch down the oldest version we have, 1.1.28.2 of EU/USA version (Zentia), with manualpatch files from v0.X from any other region, and get a partial recreation of those oldest versions of the game. This is why preserving the manualpatch files is also currently very important.  
 
 ---
 
@@ -81,7 +85,7 @@ This document itself will be the most up-to-date resource that lists which files
 
 **Full clients** (~0.8XXX.XX? to 8.X.X.X+ exist):  
 **Have:** 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
-**Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?  
+**Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?. It's especially important to find any 0.X version of the game.  
 
 **ManualPatch files:**  
 **Have:** Most after ManualPatch2.3.23.1-2.3.24.1.exe  
@@ -93,7 +97,7 @@ This document itself will be the most up-to-date resource that lists which files
 
 **Private server clients:**  
 **Have:** 10.8复古 (Retro), 95版本客户端, 104服客户端, 105版本客户端, 105下载包1 (XNXM下载包2_version1), 120仙途OL, 仙路有你  
-10.8复古 (Retro) is a private server that, according to some of it's raw client files I could decrypt, seems to have been actually based on the game version 2.3.25.13, and it seems to use a unique asset encryption that I didn't try cracking yet.  
+10.8复古 (Retro) is a private server that, according to some of it's raw client files I could decrypt, seems to have been actually based on the game version 2.3.25.13, and it seems to use a unique `whpackage1.0` asset encryption that I didn't try cracking yet.  
 
 ---
 
@@ -151,7 +155,7 @@ PC MMORPG
 Official site: [xx.qq.com](https://xx.qq.com)  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to today  
-**Format status: Cracked the v1 encryption used until before 3.9.70.1 (late 2015/early 2016). Cracked v2 encryption used until before 8.3.0.1 (Oct 2026). Didn't crack v3 encryption used after.** The v3 version will probably need the Tencent Protect (TenProtect/Anti-Cheat Expert) that is used to pack the game .exe and .dll files to be reverse-engineered before being cracked.  
+**Format status: Cracked the v1 encryption used until before 3.9.70.1 (late 2015/early 2016). Cracked v2 encryption used until before 8.3.0.1 (Oct 2026). Didn't crack v3 encryption used after.** The v3 version will probably need the Tencent Protect (TenProtect/Anti-Cheat Expert) that is used to pack the game's .exe/.dll files to be reverse-engineered before being cracked, or for someone to dump those .exe/.dll files (outside a VM and using something like TitanHide to not get hit with anti-VM/anti-debug features) after they unpack themself in RAM and normally start and get in game.  
 
 - **Zentia** (Europe/USA release of 《寻仙》 with minimal differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
@@ -195,7 +199,7 @@ So for anyone that wants to help as just a genuine fan of the game, they can:
 
 - Help archive the game by locating old (2008-2012) client versions or patches of the game for any version **below** 3.X.X.X.  
 
-    - You can do so by searching all over the internet for it, gaming communities, forums, file hosting websites, reverse-engineering websites, all peer-to-peer networks etc. Especially in China. Especially any old P2P networks in China where these files were likely to have been shared in 2008-2012.  
+    - You can do so by searching all over the internet for it, gaming communities, forums, file hosting websites, reverse-engineering websites, all peer-to-peer networks etc. Especially in China. Especially any old P2P networks in China where these kind of files were shared in 2008-2012. Join, search, and wait in those P2P networks for all Xunxian-related files in case someone one day joins to seed them to you.  
     Post requests for help in locating these files in those communities online and link back to this GitHub page.  
 
     - Since the game was [released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
