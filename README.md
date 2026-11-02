@@ -97,7 +97,7 @@ It would also be possible to forcibly patch down the oldest version we have, 1.1
 
 **Private server clients:**  
 **Have:** 10.8复古 (Retro), 95版本客户端, 104服客户端, 105版本客户端, 105下载包1 (XNXM下载包2_version1), 120仙途OL, 仙路有你  
-10.8复古 (Retro) is a private server that, according to some of it's raw client files I could decrypt, seems to have been actually based on the game version 2.3.25.13, and it seems to use a unique `whpackage1.0` asset encryption that I didn't try cracking yet.  
+10.8复古 (Retro) is a private server that uses a unique, custom version of the `whpackage1.0` asset encryption, which I have cracked, and according to its decrypted metadata files it seems to have actually initially been based on the game version 2.3.25.13, although I have heard that its progression is currently locked to level 60 while incorporating a lot of content from the much later, level 95 cap version of the official game. One would need to deeply examine and compare all of the raw game asset files with all raw files from many of the official versions of the game to determine the exact contents of this private server client.  
 
 ---
 
