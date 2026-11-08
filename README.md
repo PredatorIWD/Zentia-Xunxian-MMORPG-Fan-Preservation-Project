@@ -84,12 +84,12 @@ It would also be possible to forcibly patch down the oldest version we have, 1.1
 ### Archiving Xunxian (2008-Today):
 
 **Full clients** (~0.8XXX.XX? to 8.X.X.X+ exist):  
-**Have:** 3.0.4.1 3.0.21.1 3.1.3.1 3.2.4.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.5.1 3.8.14.1 3.8.41.1 3.9.3.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
+**Have:** 3.0.4.1 3.0.21.1 3.1.3.1 3.1.7.1 3.1.22.1 3.2.4.1 3.2.20.1 3.2.22.1 3.3.0.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.0.1 3.8.5.1 3.8.10.1 3.8.14.1 3.8.41.1 3.9.0.1 3.9.3.1 3.9.20.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
 **Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?. It's especially important to find any 0.X version of the game.  
 
 **ManualPatch files:**  
-**Have:** Most after ManualPatch2.3.23.1-2.3.24.1.exe  
-**Important missing:** From 2.1.25.1 to 2.3.23.1, ManualPatch2.0.25.1-2.0.26.1.exe, all before ManualPatch1.0.46.1-1.1.4.1.exe  
+**Have:** All after ManualPatch2.3.23.1-2.3.24.1.exe and including it (1720+ in total)  
+**Important missing:** From 2.1.25.1 to 2.3.23.1, ManualPatch2.0.25.1-2.0.26.1.exe, basically all before ManualPatch1.0.46.1-1.1.4.1.exe  
 
 **Server files:**  
 **Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **incomplete** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
