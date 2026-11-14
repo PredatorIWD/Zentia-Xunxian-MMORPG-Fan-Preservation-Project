@@ -65,19 +65,7 @@ This document itself will be the most up-to-date resource that lists which files
 
 Game clients of the same game versions from different regions, from what I have seen by comparing the decrypted raw files, actually mostly have the same content (outside of the translated text) with only a handful of tiny differences.  
 This means that, for example, the EU/USA release of the game (Zentia) which officially ended at 1.4.25.27, can be forcibly patched to a higher version with files from the later Chinese clients, while making sure the new text is translated and any conflicts are resolved, of course.  
-It would also be possible to forcibly patch down the oldest version we have, 1.1.28.2 of EU/USA version (Zentia), with manualpatch files from v0.X from any other region, and get a partial recreation of those oldest versions of the game. This is why preserving the manualpatch files is also currently very important.  
-
----
-
-### Archiving Zentia (2010-2012):
-
-**Full clients** (1.1.28.2 to 1.4.25.27 existed, not including the [press release version](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) which may have been 1.1.28.1):  
-**Have:** 1.1.28.2 1.1.28.5 1.1.29.4 1.2.25.4  
-**Important missing:** 1.3.X.X, 1.4.X.X
-
-**ManualPatch files** ([47 existed](https://web.archive.org/web/20120718224402/http://z.us.changyou.com/download/manual.shtml) in total. File name format: `ManualPatch<fromGameVersion>-<toGameVersion>.exe`. These contain whole game asset files that were updated from one version to the other inside.):  
-**Have:** (10 + 1 partial): 1.1.28.5-1.1.28.6 1.1.28.6-1.1.28.7(partial, first 3.47MB out of 6.06MB) 1.1.29.19-1.1.29.21 1.3.66.10-1.3.66.11 1.3.66.11-1.3.66.12 1.4.25.16-1.4.25.17 1.4.25.17-1.4.25.18 1.4.25.18-1.4.25.19 1.4.25.19-1.4.25.20 1.4.25.21-1.4.25.22 1.4.25.26-1.4.25.27  
-**Important missing:** The rest from the linked 47 above. I think a few were probably uploaded to VirusTotal.com that can be downloaded, but an expensive enterprise account is needed to use the Advanced Search to find and download them.  
+It would also be possible to forcibly patch down the oldest version we have, 1.1.28.2 of EU/USA version (Zentia), with manualpatch files from v0.X from any other region, and get a partial recreation of the oldest versions of the game. This is one of the reasons why preserving the manualpatch files is very important.  
 
 ---
 
@@ -87,8 +75,8 @@ It would also be possible to forcibly patch down the oldest version we have, 1.1
 **Have:** 3.0.4.1 3.0.21.1 3.1.3.1 3.1.7.1 3.1.22.1 3.2.4.1 3.2.20.1 3.2.22.1 3.3.0.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.0.1 3.8.5.1 3.8.10.1 3.8.14.1 3.8.41.1 3.9.0.1 3.9.3.1 3.9.20.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
 **Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?. It's especially important to find any 0.X version of the game.  
 
-**ManualPatch files:**  
-**Have:** All after ManualPatch2.3.23.1-2.3.24.1.exe and including it (1720+ in total)  
+**ManualPatch files:** (File name format: `ManualPatch<fromGameVersion>-<toGameVersion>[-SD].exe`. These contain the **entirety** of all game asset files being updated.)  
+**Have:** (1720+ in total) All after ManualPatch2.3.23.1-2.3.24.1.exe and including it  
 **Important missing:** From 2.1.25.1 to 2.3.23.1, ManualPatch2.0.25.1-2.0.26.1.exe, basically all before ManualPatch1.0.46.1-1.1.4.1.exe  
 
 **Server files:**  
@@ -101,7 +89,29 @@ It would also be possible to forcibly patch down the oldest version we have, 1.1
 
 ---
 
-### Archived versions of other games from the same developer:
+### Archiving Zentia (2010-2012):
+
+**Full clients** (1.1.28.2 to 1.4.25.27 existed, not including the [press release version](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) which may have been 1.1.28.1):  
+**Have:** 1.1.28.2 1.1.28.5 1.1.29.4 1.2.25.4  
+**Important missing:** 1.3.X.X, 1.4.X.X
+
+**ManualPatch files** ([47 existed](https://web.archive.org/web/20120718224402/http://z.us.changyou.com/download/manual.shtml) in total):  
+**Have:** (10 + 1 partial) 1.1.28.5-1.1.28.6 1.1.28.6-1.1.28.7(partial, first 3.47MB out of 6.06MB) 1.1.29.19-1.1.29.21 1.3.66.10-1.3.66.11 1.3.66.11-1.3.66.12 1.4.25.16-1.4.25.17 1.4.25.17-1.4.25.18 1.4.25.18-1.4.25.19 1.4.25.19-1.4.25.20 1.4.25.21-1.4.25.22 1.4.25.26-1.4.25.27  
+**Important missing:** The rest from the linked 47 above. I think a few were probably uploaded to VirusTotal.com that can be downloaded, but an expensive enterprise account is needed to use the Advanced Search to find and download them.  
+
+---
+
+### Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2009?/2010-2014?):
+
+**Full clients:**  
+**Have:** 3.5.66.1 (Version associated with the partial server-side leaked files)  
+
+**ManualPatch files:**  
+**Have:** 2.0.8.13-2.1.10.10, 2.1.10.10-2.1.10.11, 2.4.25.11-2.5.29.1, 2.5.29.1-2.6.13.1  
+
+---
+
+## Archived versions of other games from the same developer:
 
 Archiving for preservation purposes, but also because most of these games should be using the same custom engine, custom asset formats, and general game architecture, which could help in better understanding Zentia/Xunxian itself.  
 
