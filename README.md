@@ -9,17 +9,19 @@
 
 ## Table of Contents
 
-- [Xunxian games summary](#games-summary)
+- [Xunxian games summary](#xunxian-games-summary)
 - [Purpose](#purpose)
 - [My background](#my-background)
 - [Current progress](#current-progress)
   - [Archiving](#archiving)
-    - [Archiving Zentia (2010-2012)](#archiving-zentia-2010-2012)
     - [Archiving Xunxian (2008-Today)](#archiving-xunxian-2008-today)
+    - [Archiving Zentia (2010-2012)](#archiving-zentia-2010-2012)
+    - [Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2009?/2010-2014?)](#archiving-xunxian-published-in-malaysia-by-cubinet-interactive-cubizone-20092010-2014)
     - [Archived versions of other games from the same developer](#archived-versions-of-other-games-from-the-same-developer)
   - [Reverse engineering](#reverse-engineering)
     - [Some of the more important completed tasks](#some-of-the-more-important-completed-tasks)
     - [Reverse engineering game asset packing format: `whpackage1.0` / `whsc1.0` / .dpk](#reverse-engineering-game-asset-packing-format-whpackage10--whsc10--dpk)
+      - [Games that use the `whpackage1.0` format](#games-that-use-the-whpackage10-format)
 - [Publishing all of the files and the actual reverse-engineering work](#publishing-all-of-the-files-and-the-actual-reverse-engineering-work)
 - [Want to help?](#want-to-help)
 
@@ -103,10 +105,10 @@ It would also be possible to forcibly patch down the oldest version we have, 1.1
 
 ### Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2009?/2010-2014?):
 
-**Full clients:**  
+**Full clients** ([Archived download page](https://web.archive.org/web/20091212154100/http://x2online.cubizone.com/chi/index.php?option=com_content&view=article&id=111&Itemid=132)):  
 **Have:** 3.5.66.1 (Version associated with the partial server-side leaked files)  
 
-**ManualPatch files:**  
+**ManualPatch files** ([Archived download page](https://web.archive.org/web/20140627025631/http://x2online.cubizone.com/chi/index.php?option=com_content&view=article&id=112&Itemid=133)):  
 **Have:** 2.0.8.13-2.1.10.10, 2.1.10.10-2.1.10.11, 2.4.25.11-2.5.29.1, 2.5.29.1-2.6.13.1  
 
 ---
