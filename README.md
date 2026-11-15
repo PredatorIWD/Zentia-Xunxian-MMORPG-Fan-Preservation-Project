@@ -78,7 +78,7 @@ It would also be possible to forcibly patch down the oldest version we have, 1.1
 **Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?. It's especially important to find any 0.X version of the game.  
 
 **ManualPatch files:** (File name format: `ManualPatch<fromGameVersion>-<toGameVersion>[-SD].exe`. These contain the **entirety** of all game asset files being updated.)  
-**Have:** (1720+ in total) All after ManualPatch2.3.23.1-2.3.24.1.exe and including it  
+**Have:** (1720+ in total) From ManualPatch1.0.46.1-1.1.4.1.exe to ManualPatch2.0.24.1-2.0.25.1.exe, from ManualPatch2.0.26.1-2.1.4.1.exe to ManualPatch2.1.24.1-2.1.25.1, from ManualPatch2.3.23.1-2.3.24.1.exe to today  
 **Important missing:** From 2.1.25.1 to 2.3.23.1, ManualPatch2.0.25.1-2.0.26.1.exe, basically all before ManualPatch1.0.46.1-1.1.4.1.exe  
 
 **Server files:**  
@@ -103,7 +103,7 @@ It would also be possible to forcibly patch down the oldest version we have, 1.1
 
 ---
 
-### Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2009?/2010-2014?):
+### Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2010-2014?):
 
 **Full clients** ([Archived download page](https://web.archive.org/web/20091212154100/http://x2online.cubizone.com/chi/index.php?option=com_content&view=article&id=111&Itemid=132)):  
 **Have:** 3.5.66.1 (Version associated with the partial server-side leaked files)  
