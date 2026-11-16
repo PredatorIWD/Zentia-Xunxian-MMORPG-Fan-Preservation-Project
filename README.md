@@ -65,20 +65,20 @@ That page already has the most important Zentia files anyway.
 
 This document itself will be the most up-to-date resource that lists which files I've archived.  
 
-Game clients of the same game versions from different regions, from what I have seen by comparing the decrypted raw files, actually mostly have the same content (outside of the translated text) with only a handful of tiny differences.  
-This means that, for example, the EU/USA release of the game (Zentia) which officially ended at 1.4.25.27, can be forcibly patched to a higher version with files from the later Chinese clients, while making sure the new text is translated and any conflicts are resolved, of course.  
-It would also be possible to forcibly patch down the oldest version we have, 1.1.28.2 of EU/USA version (Zentia), with manualpatch files from v0.X from any other region, and get a partial recreation of the oldest versions of the game. This is one of the reasons why preserving the manualpatch files is very important.  
+Localized game clients of the same versions but from different regions basically have the exact same content with only a handful of small differences. For example the question and answer UI quiz mini-game, some Chinese culture specific in-game events, anti-addiction system, anti-bot captcha system etc. are ripped out or switched off in the EU/USA release.  
+This means that, for example, the EU/USA release of the game (Zentia) which officially ended at 1.4.25.27, can be forcibly patched to a higher version with files from the later Chinese clients, while making sure the new text is translated and any smaller conflicts are resolved, of course.  
+It would also, for example, be possible to forcibly patch down the oldest version we have, 1.1.28.2 of EU/USA version (Zentia), with manualpatch files from v0.X from any other region, and get a partial recreation of the oldest versions of the game. This is one of the reasons why preserving all clients and manualpatch files from all regions is very important.  
 
 ---
 
 ### Archiving Xunxian (2008-Today):
 
 **Full clients** (~0.8XXX.XX? to 8.X.X.X+ exist):  
-**Have:** 3.0.4.1 3.0.21.1 3.1.3.1 3.1.7.1 3.1.22.1 3.2.4.1 3.2.20.1 3.2.22.1 3.3.0.1 3.3.4.1 3.3.21.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.42.1 3.7.2.1 3.8.0.1 3.8.5.1 3.8.10.1 3.8.14.1 3.8.41.1 3.9.0.1 3.9.3.1 3.9.20.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
+**Have:** 3.0.4.1 3.0.20.1 3.0.21.1 3.1.0.1 3.1.3.1 3.1.7.1 3.1.22.1 3.2.4.1 3.2.20.1 3.2.22.1 3.3.0.1 3.3.4.1 3.3.21.1 3.4.0.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.5.1 3.6.42.1 3.7.0.1 3.7.2.1 3.7.40.1 3.8.0.1 3.8.5.1 3.8.10.1 3.8.14.1 3.8.41.1 3.9.0.1 3.9.3.1 3.9.20.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
 **Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?. It's especially important to find any 0.X version of the game.  
 
 **ManualPatch files:** (File name format: `ManualPatch<fromGameVersion>-<toGameVersion>[-SD].exe`. These contain the **entirety** of all game asset files being updated.)  
-**Have:** (1720+ in total) From ManualPatch1.0.46.1-1.1.4.1.exe to ManualPatch2.0.24.1-2.0.25.1.exe, from ManualPatch2.0.26.1-2.1.4.1.exe to ManualPatch2.1.24.1-2.1.25.1, from ManualPatch2.3.23.1-2.3.24.1.exe to today  
+**Have:** (1720+ in total) From ManualPatch1.0.46.1-1.1.4.1.exe to ManualPatch2.0.24.1-2.0.25.1.exe, from ManualPatch2.0.26.1-2.1.4.1.exe to ManualPatch2.1.24.1-2.1.25.1, from ManualPatch2.3.23.1-2.3.24.1.exe to latest  
 **Important missing:** From 2.1.25.1 to 2.3.23.1, ManualPatch2.0.25.1-2.0.26.1.exe, basically all before ManualPatch1.0.46.1-1.1.4.1.exe  
 
 **Server files:**  
@@ -167,7 +167,7 @@ PC MMORPG
 Official site: [xx.qq.com](https://xx.qq.com)  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to today  
-**Format status: Cracked the v1 encryption used until before 3.9.70.1 (late 2015/early 2016). Cracked v2 encryption used until before 8.3.0.1 (Oct 2026). Didn't crack v3 encryption used after.** The v3 version will probably need the Tencent Protect (TenProtect/Anti-Cheat Expert) that is used to pack the game's .exe/.dll files to be reverse-engineered before being cracked, or for someone to dump those .exe/.dll files (outside a VM and using something like TitanHide to not get hit with anti-VM/anti-debug features) after they unpack themself in RAM and normally start and get in game.  
+**Format status: Cracked the v1 encryption used until before 3.9.70.1 (late 2015/early 2016). Cracked v2 encryption used until before 8.3.0.1 (Oct 2026) when it comes to the test realm version of the game (live game still only uses v2). Didn't crack v3 encryption used after.** The v3 version will probably need the Tencent Protect (TenProtect/Anti-Cheat Expert) that is used to pack the game's .exe/.dll files to be reverse-engineered before being cracked, or for someone to dump those .exe/.dll files (outside a VM and using something like TitanHide to not get hit with anti-VM/anti-debug features) after they unpack themself in RAM and normally start and get in game.  
 
 - **Zentia** (Europe/USA release of 《寻仙》 with minimal differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
