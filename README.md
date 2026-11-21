@@ -4,7 +4,7 @@
 > **File help request!**  
 >
 > Any and all Zentia/Xunxian-related files can be incredibly important to the proper preservation of this game, especially any files for the game versions below 3.X.X.X.  
-> In case you or someone you know played this game long ago (especially in 2008-2012), please search that PC, any old devices, laptops, file backups, and old USB drives for each of these keywords: Zentia, Xunxian, ManualPatch, 寻仙  
+> If you or someone you know played this game long ago (especially in 2008-2012), please search that PC, any old devices, laptops, file backups, and old USB drives for each of these keywords: Zentia, Xunxian, ManualPatch, 寻仙  
 > And contact me in case you find **anything** at: luka.celebic12 AT gmail.com 
 
 ## Table of Contents
@@ -16,7 +16,7 @@
   - [Archiving](#archiving)
     - [Archiving Xunxian (2008-Today)](#archiving-xunxian-2008-today)
     - [Archiving Zentia (2010-2012)](#archiving-zentia-2010-2012)
-    - [Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2009?/2010-2014?)](#archiving-xunxian-published-in-malaysia-by-cubinet-interactive-cubizone-20092010-2014)
+    - [Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2010-2014?)](#archiving-xunxian-published-in-malaysia-by-cubinet-interactive-cubizone-2010-2014)
     - [Archived versions of other games from the same developer](#archived-versions-of-other-games-from-the-same-developer)
   - [Reverse engineering](#reverse-engineering)
     - [Some of the more important completed tasks](#some-of-the-more-important-completed-tasks)
@@ -67,27 +67,31 @@ This document itself will be the most up-to-date resource that lists which files
 
 Localized game clients of the same versions but from different regions basically have the exact same content with only a handful of small differences. For example the question and answer UI quiz mini-game, some Chinese culture specific in-game events, anti-addiction system, anti-bot captcha system etc. are ripped out or switched off in the EU/USA release.  
 This means that, for example, the EU/USA release of the game (Zentia) which officially ended at 1.4.25.27, can be forcibly patched to a higher version with files from the later Chinese clients, while making sure the new text is translated and any smaller conflicts are resolved, of course.  
-It would also, for example, be possible to forcibly patch down the oldest version we have, 1.1.28.2 of EU/USA version (Zentia), with manualpatch files from v0.X from any other region, and get a partial recreation of the oldest versions of the game. This is one of the reasons why preserving all clients and manualpatch files from all regions is very important.  
+It would also, for example, be possible to forcibly patch down the oldest version we have, 1.1.28.2 of EU/USA version (Zentia), with ManualPatch files from v0.X from any other region, and get a partial recreation of the oldest versions of the game. This is one of the reasons why preserving all clients and ManualPatch files from all regions is very important.  
+
+From what I can see, starting from 2.5.0.1, some of the versions of the game are test realm versions, which get updates first for testing and tweaking before landing in the main game branch. The main and the test game branches intertwine and occasionally touch around the same game version line, i.e., (ignoring localizations) there is only one game version 2.5.0.1 and it happens to be a test version. So when working with the files, it may be important to be aware if they are for the test version.  
 
 ---
 
 ### Archiving Xunxian (2008-Today):
 
 **Full clients** (~0.8XXX.XX? to 8.X.X.X+ exist):  
-**Have:** 3.0.4.1 3.0.20.1 3.0.21.1 3.1.0.1 3.1.3.1 3.1.7.1 3.1.22.1 3.2.4.1 3.2.20.1 3.2.22.1 3.3.0.1 3.3.4.1 3.3.21.1 3.4.0.1 3.4.3.1 3.4.23.1 3.5.42.1 3.5.6.1 3.5.63.1 3.6.4.1 3.6.5.1 3.6.42.1 3.7.0.1 3.7.2.1 3.7.40.1 3.8.0.1 3.8.5.1 3.8.10.1 3.8.14.1 3.8.41.1 3.9.0.1 3.9.3.1 3.9.20.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
+**Have:** 3.0.4.1 3.0.20.1 3.0.21.1 3.1.0.1 3.1.3.1 3.1.7.1 3.1.22.1 3.2.4.1 3.2.20.1 3.2.22.1 3.3.0.1 3.3.4.1 3.3.21.1 3.4.0.1 3.4.3.1 3.4.23.1 3.5.6.1 3.5.42.1 3.5.63.1 3.6.4.1 3.6.5.1 3.6.42.1 3.7.0.1 3.7.2.1 3.7.40.1 3.8.0.1 3.8.5.1 3.8.10.1 3.8.14.1 3.8.41.1 3.9.0.1 3.9.3.1 3.9.20.1 3.9.22.1 4.1.2.1 4.2.0.1 4.2.2.1 4.3.2.1 7.0.26.1 8.0.3.1 8.1.1.1 8.2.0.1 8.2.3.1  
 **Important missing:** All before 3.X.X.X to ~0.8XXX.XX? and before?. It's especially important to find any 0.X version of the game.  
 
 **ManualPatch files:** (File name format: `ManualPatch<fromGameVersion>-<toGameVersion>[-SD].exe`. These contain the **entirety** of all game asset files being updated.)  
-**Have:** (1720+ in total) From ManualPatch1.0.46.1-1.1.4.1.exe to ManualPatch2.0.24.1-2.0.25.1.exe, from ManualPatch2.0.26.1-2.1.4.1.exe to ManualPatch2.1.24.1-2.1.25.1, from ManualPatch2.3.23.1-2.3.24.1.exe to latest  
-**Important missing:** From 2.1.25.1 to 2.3.23.1, ManualPatch2.0.25.1-2.0.26.1.exe, basically all before ManualPatch1.0.46.1-1.1.4.1.exe  
+**Have:** (1720+ in total) From ManualPatch1.0.46.1-1.1.4.1.exe to ManualPatch2.0.24.1-2.0.25.1.exe, from ManualPatch2.0.26.1-2.1.4.1.exe to ManualPatch2.1.24.1-2.1.25.1, and an unbroken line from ManualPatch2.3.23.1-2.3.24.1.exe to the latest game version  
+**Important missing:** All before ManualPatch1.0.46.1-1.1.4.1.exe,  
+ManualPatch2.0.25.1-2.0.26.1.exe,  
+2.1.25.1-2.1.26.1 2.1.26.1-2.1.27.1 2.1.27.1-2.1.28.1 2.1.28.1-2.1.41.1 2.1.41.1-2.1.42.1 2.1.42.1-2.1.43.1 2.1.43.1-2.1.60.1 2.1.60.1-2.2.3.1 2.2.3.1-2.2.4.1 2.2.4.1-2.2.5.1 2.2.5.1-2.2.21.1 2.2.21.1-2.2.22.1 2.2.22.1-2.2.23.1 2.2.23.1-2.2.25.1 2.2.25.1-2.2.27.1 2.2.27.1-2.2.29.1 2.2.29.1-2.2.42.1 2.2.42.1-2.2.43.1 2.2.43.1-2.2.61.1 2.2.61.1-2.2.63.1 2.2.63.1-2.3.3.1 2.3.3.1-2.3.4.1 2.3.4.1-2.3.5.1 2.3.5.1-2.3.7.1 2.3.7.1-2.3.22.1 2.3.22.1-2.3.23.1  
 
 **Server files:**  
-**Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **incomplete** official Malaysian server-side compiled binaries with a lot of symbols leak. Probably for the game version 3.5.66.1. It has a lot of important server-side binaries, but it's also missing important binaries for login, some database logic, and other important things. It's not something that can be quickly patched to make the game work. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
+**Have:** "寻仙手工端+寻仙之路+寻仙马端源码" - The widespread **incomplete** official Malaysian server-side compiled binaries with a lot of symbols leak. It's for the game version 3.5.66.1. Basically all of the most important server-side binaries should be there, although some are missing, making this leak not something that can be instantly launched to get a local version of the game running. I have multiple versions of the repack releases of these files, but they all seem to be mostly the same.  
 **Important missing:** The actual full Malaysian server leak, and any other server files.  
 
 **Private server clients:**  
 **Have:** 10.8复古 (Retro), 95版本客户端, 104服客户端, 105版本客户端, 105下载包1 (XNXM下载包2_version1), 120仙途OL, 仙路有你  
-10.8复古 (Retro) is a private server that uses a unique, custom version of the `whpackage1.0` asset encryption, which I have cracked, and according to its decrypted metadata files it seems to have actually initially been based on the game version 2.3.25.13, although I have heard that its progression is currently locked to level 60 while incorporating a lot of content from the much later, level 95 cap version of the official game. One would need to deeply examine and compare all of the raw game asset files with all raw files from many of the official versions of the game to determine the exact contents of this private server client.  
+10.8复古 (Retro) is a private server that uses a unique, custom version of the `whpackage1.0` asset encryption, which I have cracked, and according to its decrypted game files it seems to be the Malaysian game version 2.3.25.13.  
 
 ---
 
@@ -95,21 +99,23 @@ It would also, for example, be possible to forcibly patch down the oldest versio
 
 **Full clients** (1.1.28.2 to 1.4.25.27 existed, not including the [press release version](https://web.archive.org/web/20101126235327/http://z.us.changyou.com/news/archive.php) which may have been 1.1.28.1):  
 **Have:** 1.1.28.2 1.1.28.5 1.1.29.4 1.2.25.4  
-**Important missing:** 1.3.X.X, 1.4.X.X
+**Important missing:** 1.3.X.X, 1.4.X.X, Zentia-1.3.66.10.exe installer  
 
 **ManualPatch files** ([47 existed](https://web.archive.org/web/20120718224402/http://z.us.changyou.com/download/manual.shtml) in total):  
 **Have:** (10 + 1 partial) 1.1.28.5-1.1.28.6 1.1.28.6-1.1.28.7(partial, first 3.47MB out of 6.06MB) 1.1.29.19-1.1.29.21 1.3.66.10-1.3.66.11 1.3.66.11-1.3.66.12 1.4.25.16-1.4.25.17 1.4.25.17-1.4.25.18 1.4.25.18-1.4.25.19 1.4.25.19-1.4.25.20 1.4.25.21-1.4.25.22 1.4.25.26-1.4.25.27  
-**Important missing:** The rest from the linked 47 above. I think a few were probably uploaded to VirusTotal.com that can be downloaded, but an expensive enterprise account is needed to use the Advanced Search to find and download them.  
+**Important missing:** 1.1.28.2-1.1.28.3 1.1.28.3-1.1.28.4 1.1.28.4-1.1.28.5 1.1.28.6-1.1.28.7 1.1.28.7-1.1.28.10 1.1.28.10-1.1.29.4 1.1.29.4-1.1.29.6 1.1.29.6-1.1.29.7 1.1.29.7-1.1.29.8 1.1.29.8-1.1.29.9 1.1.29.9-1.1.29.11 1.1.29.11-1.1.29.13 1.1.29.13-1.1.29.18 1.1.29.18-1.1.29.19 1.1.29.21-1.1.29.22 1.1.29.22-1.1.29.24 1.1.29.24-1.2.25.4 1.2.25.4-1.2.25.7 1.2.25.7-1.2.25.12 1.2.25.12-1.2.25.13 1.2.25.13-1.2.25.15 1.2.25.15-1.2.25.16 1.2.25.16-1.2.25.18 1.2.25.18-1.2.25.19 1.2.25.19-1.2.25.20 1.2.25.20-1.2.25.23 1.2.25.23-1.2.25.26 1.2.25.26-1.3.66.10 1.3.66.12-1.4.25.12 1.4.25.12-1.4.25.13 1.4.25.13-1.4.25.14 1.4.25.14-1.4.25.15 1.4.25.15-1.4.25.16 1.4.25.20-1.4.25.21 1.4.25.22-1.4.25.23 1.4.25.23-1.4.25.25 1.4.25.25-1.4.25.26  
 
 ---
 
 ### Archiving Xunxian published in Malaysia by Cubinet Interactive (Cubizone) (2010-2014?):
 
 **Full clients** ([Archived download page](https://web.archive.org/web/20091212154100/http://x2online.cubizone.com/chi/index.php?option=com_content&view=article&id=111&Itemid=132)):  
-**Have:** 3.5.66.1 (Version associated with the partial server-side leaked files)  
+**Have:** 2.3.25.13("10.8复古 (Retro)" private server  version), 3.5.66.1(version associated with the partial server-side leaked files)  
 
 **ManualPatch files** ([Archived download page](https://web.archive.org/web/20140627025631/http://x2online.cubizone.com/chi/index.php?option=com_content&view=article&id=112&Itemid=133)):  
 **Have:** 2.0.8.13-2.1.10.10, 2.1.10.10-2.1.10.11, 2.4.25.11-2.5.29.1, 2.5.29.1-2.6.13.1  
+
+**Known versions missing:** 0.8306.05 1.0.46.1 1.1.28.1 1.1.28.6 1.2.25.1 1.2.25.3 1.3.66.1 1.3.66.2 1.3.66.3 1.3.66.4 1.3.66.5 1.4.48.1 1.4.48.2 1.4.48.3 1.4.48.4 1.4.48.5 2.0.8.10 2.0.8.11 2.0.8.12 2.0.8.13 2.1.10.10 2.1.10.11 2.1.10.12 2.1.10.13 2.1.10.14 2.2.4.10 2.2.4.11 2.2.4.12 2.2.4.13 2.2.4.14 2.2.4.15 2.2.4.16 2.2.4.17 2.2.4.18 2.2.4.19 2.2.4.20 2.2.63.10 2.2.63.11 2.3.25.10 2.3.25.11 2.3.25.12 2.3.25.14 2.3.25.15 2.3.25.16 2.3.25.17 2.4.25.10 2.4.25.11 2.5.29.1 2.6.13.1 2.6.14.1 3.0.29.1 3.0.30.1 3.0.31.1 3.0.32.1 3.0.33.1 3.1.33.1 3.1.34.1 3.2.25.1 3.2.26.1 3.2.27.1 3.2.28.1 3.3.32.1 3.4.33.1 3.4.34.1 3.5.65.1  
 
 ---
 
@@ -167,7 +173,7 @@ PC MMORPG
 Official site: [xx.qq.com](https://xx.qq.com)  
 [Released in](https://www.pixelgame.net/pixelsoft/english/xunxian): Mainland China / Hong Kong, China / Taiwan, China / South Korea / Singapore / Malaysia / Thailand / Europe / Vietnam / North America  
 Servers online: [27-Oct-2008](https://www.pixelgame.net/pixelsoft/site/xunxian) to today  
-**Format status: Cracked the v1 encryption used until before 3.9.70.1 (late 2015/early 2016). Cracked v2 encryption used until before 8.3.0.1 (Oct 2026) when it comes to the test realm version of the game (live game still only uses v2). Didn't crack v3 encryption used after.** The v3 version will probably need the Tencent Protect (TenProtect/Anti-Cheat Expert) that is used to pack the game's .exe/.dll files to be reverse-engineered before being cracked, or for someone to dump those .exe/.dll files (outside a VM and using something like TitanHide to not get hit with anti-VM/anti-debug features) after they unpack themself in RAM and normally start and get in game.  
+**Format status: Cracked the v1 encryption used until before 3.9.70.1 (late 2015/early 2016). Cracked v2 encryption used until before 8.3.0.1 (Oct 2026) (test realm version) (live game still only uses v2). Didn't crack v3 encryption used after.** The v3 version will probably need the Tencent Protect (TenProtect/Anti-Cheat Expert) that is used to pack the game's .exe/.dll files to be reverse-engineered before being cracked, or for someone to dump those .exe/.dll files (outside a VM and using something like TitanHide to not get hit with anti-VM/anti-debug features) after they unpack themselves in RAM and normally start and get in game.  
 
 - **Zentia** (Europe/USA release of 《寻仙》 with minimal differences, initially codenamed "Project Z")  
 PC MMORPG, collaboration with [wikipedia.org/wiki/ChangYou.com](https://en.wikipedia.org/wiki/Changyou.com)  
@@ -218,14 +224,19 @@ So for anyone that wants to help as just a genuine fan of the game, they can:
     Try to find clients that were specific to some of these other regions, since some of the game clients were translated in other languages and published by separate game publishers on separate websites hosting the game files.  
     For example in Korea, Xunxian had a separate client, was published by "CJ Internet" and was called "심선 온라인" (Simseon Online). You can search and ask around in Korean gaming communities like section.cafe.naver.com/ca-fe, Korean gaming magazine CD preservation groups etc.  
 
+    - You can search for "retro"/"nostalgia" type of Xunxian private servers that are distributing game clients from older versions of the game, that's how I archived the 2.3.25.13 Malaysian version for example. Generally any private server that has an in-game level cap of 95 can potentially be useful, but especially any below 95.  
+
     - There are also some Chinese (and Korean) old CD preservation groups that digitize and upload old CDs that were distributed in some Chinese magazines and places like that which contained many files on them including game clients since back in those days the internet was much slower and less stable for downloading large game client installers in the browser.  
     Find and properly search through these collections for any discs between 2008-2012, especially 2008/2009.  
+
+    - There are some ManualPatch files that were uploaded to VirusTotal.com that can be downloaded, but an expensive premium/enterprise account is needed to do so, and also to use the Advanced Search site feature to potentially find more files. We would basically need to find someone who has a job as a security malware reverse-engineer with such a premium account in order to get these files.  
 
     - The biggest help (aside from the game source code itself leaking or there being an entirely new server-side file leak) would be to just find the **complete** Malaysian server-side files leak.  
     Although from what I understand that is being monopolized by private server owners in China and won't be shared.  
     The server-side files that are shared/sold online seem to all be incomplete, or at best look like they are complete inside a compressed .zip archive when looking at it with WinRAR/7-zip, but the data inside the archive is actually still incomplete, since when looking at the **raw data** of the .zip archive through a hex editor you see that some of the data inside was zeroed out manually only **after** actually being compressed, leading to the archive viewers to still display correct metadata as if all the files were there, but no longer have the actual data of some files at all.  
 
 - If you have done any reverse-engineering or decompiling of any of these games, you can help by sending your work. Potentially also unpacking/dumping all of the packed game .exe and .dll files, which are packed with Tencent Protect (TenProtect/Anti-Cheat Expert).  
+
 ---
 
 <small>*Information mentioned in this project might not be fully correct.*</small>  
